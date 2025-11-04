@@ -1,103 +1,450 @@
-
 <!doctype html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Curriculum Vitae</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Alan Stines, Ph.D. — Portfolio</title>
+    <meta name="description" content="Portfolio of Alan Stines, Ph.D., Assistant Professor of Information Technology at Middle Georgia State University.">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="assets/css/custom.css" rel="stylesheet">
   </head>
-  <body id="top">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold text-primary" href="#top">
-          <span class="badge bg-primary me-2">CV</span>Curriculum Vitae
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Navigate</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-              <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
-              <li class="nav-item ms-lg-3">
-                <a class="btn btn-primary" href="assets/docs/Stines-Alan-CV.docx" target="_blank" rel="noopener">Download CV (.docx)</a>
-              </li>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-semibold" href="#home">Alan Stines, Ph.D.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+              <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+              <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
-
-    <header class="hero py-5">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-8">
-            <h1 class="display-5 mb-1 text-gradient">Curriculum Vitae</h1>
-            <p class="lead mb-2"></p>
-            <p class="mb-3"></p>
-            
-          </div>
-          <div class="col-lg-4">
-            <div id="heroCarousel" class="carousel slide rounded overflow-hidden shadow-soft" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active p-4 bg-light"><h6 class="text-primary mb-1">Education</h6><p class="mb-0">Degrees and institutions</p></div>
-                <div class="carousel-item p-4 bg-light"><h6 class="text-primary mb-1">Publications</h6><p class="mb-0">Papers and talks</p></div>
-                <div class="carousel-item p-4 bg-light"><h6 class="text-primary mb-1">Awards & Service</h6><p class="mb-0">Recognitions and committees</p></div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </nav>
     </header>
 
-    <section id="cv" class="py-5">
-      <div class="container">
-        <div class="row g-4">
-          <aside class="col-lg-3">
-            <div id="toc" class="card shadow-soft">
-              <div class="card-header bg-primary text-white">Contents</div>
-              <div class="list-group list-group-flush">
-                <a class='list-group-item list-group-item-action' href='#honors-and-awards'>Honors and Awards</a><a class='list-group-item list-group-item-action' href='#service-activities'>Service Activities</a><a class='list-group-item list-group-item-action' href='#professional-development'>Professional Development</a>
+    <main id="home">
+      <section class="hero-gradient text-light">
+        <div class="container py-5">
+          <div class="row align-items-center g-4 py-4">
+            <div class="col-12 col-lg-7">
+              <h1 class="display-5 fw-bold mb-3">Assistant Professor of Information Technology</h1>
+              <p class="lead mb-4">Department of Information Technology, Middle Georgia State University</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="#about" class="btn btn-light btn-lg">Learn more</a>
+                <a href="#publications" class="btn btn-outline-light btn-lg">Publications</a>
               </div>
             </div>
-          </aside>
-          <div class="col-lg-9">
-            <section id='honors-and-awards' class='py-5'><div class='container'><div class='d-flex justify-content-between align-items-end mb-3'><h2 class='mb-0'>Honors and Awards</h2><a class='btn btn-outline-primary btn-sm' href='#top'>Top</a></div><div class='row g-3'><div class='col-md-6 col-lg-4'><div class='card h-100 shadow-soft'><div class='card-body'><h6 class='card-title text-primary'>2017</h6><p class='card-text'>2017, 2018, 2022, 2024 - Dean’s Award for Faculty Excellence in Teaching.</p></div></div></div><div class='col-md-6 col-lg-4'><div class='card h-100 shadow-soft'><div class='card-body'><h6 class='card-title text-primary'>2024</h6><p class='card-text'>2024 - eMajor Faculty Hero Award</p></div></div></div><div class='col-md-6 col-lg-4'><div class='card h-100 shadow-soft'><div class='card-body'><h6 class='card-title text-primary'>2023</h6><p class='card-text'>2023 - MGA fifteen years’ service award</p></div></div></div><div class='col-md-6 col-lg-4'><div class='card h-100 shadow-soft'><div class='card-body'><h6 class='card-title text-primary'>2019</h6><p class='card-text'>2019 - DSU’s marketing campaign for doctoral student publishing.</p></div></div></div><div class='col-md-6 col-lg-4'><div class='card h-100 shadow-soft'><div class='card-body'><h6 class='card-title text-primary'>2017</h6><p class='card-text'>2017 - Included in MGA’s Finding Greatness marketing campaign.</p></div></div></div></div></div></section><section id='service-activities' class='py-5'><div class='container'><div class='d-flex justify-content-between align-items-end mb-3'><h2 class='mb-0'>Service Activities</h2><a class='btn btn-outline-primary btn-sm' href='#top'>Top</a></div><div class='accordion' id='acc-service-activities'><div class='accordion-item'><h2 class='accordion-header' id='h-service-activities-1'><button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#c-service-activities-1'>List items (12)</button></h2><div id='c-service-activities-1' class='accordion-collapse collapse' data-bs-parent='#acc-service-activities'><div class='accordion-body'><ul class='list-group list-group-striped'><li class='list-group-item'>Director of the Center for Cybersecurity Education and Applied Research (CCEAR)</li><li class='list-group-item'>Point of Contact for NSA/DHS Center of Academic Excellence in Cyber Defense (CAE-CD) Certifications</li><li class='list-group-item'>Point of Contact for Department of Defense Cyber Crime Center (DC3) partnership</li><li class='list-group-item'>2021+ - MGA Department of Information Technology Senate Representative</li><li class='list-group-item'>STEMposium Organizer – 2021+</li><li class='list-group-item'>2024+ - Department of IT Curriculum Committee Chair</li><li class='list-group-item'>Institutional, departmental, and ad-hoc committee participation</li><li class='list-group-item'>Website editor – MGA School of Computing</li><li class='list-group-item'>Student organization advisor: CyberKnights &amp; CGISSA</li><li class='list-group-item'>Bibb County Public Schools Advisory Board and Volunteer</li><li class='list-group-item'>Bleckley County Public Schools Advisory Board and Volunteer</li><li class='list-group-item'>Participates in various STEM events internally and externally</li></ul></div></div></div></div></div></section><section id='professional-development' class='py-5'><div class='container'><div class='d-flex justify-content-between align-items-end mb-3'><h2 class='mb-0'>Professional Development</h2><a class='btn btn-outline-primary btn-sm' href='#top'>Top</a></div><ul class='list-group list-group-striped shadow-soft'><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2025</span></div><div class='flex-grow-1'>NCyTE. ISASCA CISM: Certified Information Security Manager Workshop. 2025. Whatcom Community College. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2025</span></div><div class='flex-grow-1'>CAE in Cybersecurity Annual Symposium. April 2025. Charleston, South Carolina.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2025</span></div><div class='flex-grow-1'>CAE/NSA . Mentorship and Peer Review Workshop. 2025. Whatcom Community College. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2024</span></div><div class='flex-grow-1'>CAE/NSA . Mentorship and Peer Review Workshop. 2024. Whatcom Community College. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2024</span></div><div class='flex-grow-1'>National Initiative for Cybersecurity Education (NICE). (2024, June 3–5). Strengthening Ecosystems [Conference]. Sheraton Dallas, Dallas, TX, United States.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2024</span></div><div class='flex-grow-1'>Wild West Hackin&#x27; Fest. (2024). Online, United States.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2023</span></div><div class='flex-grow-1'>CAE/NSA . Mentorship and Peer Review Workshop. 2023. Whatcom Community College. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2023</span></div><div class='flex-grow-1'>CAE in Cybersecurity Annual Symposium. June 2023. Seattle, WA.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2023</span></div><div class='flex-grow-1'>National Initiative for Cybersecurity Education (NICE). (2023, June 5–7). 2023 NICE Conference &amp; Expo [Conference]. The Westin Seattle, Seattle, WA.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2023</span></div><div class='flex-grow-1'>National Cybersecurity Education Colloquium. (2023, September 18–21). 2023 National Cybersecurity Education Colloquium. Moraine Valley Community College, Palos Hills, IL.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2022</span></div><div class='flex-grow-1'>CAE/NSA . Mentorship and Peer Review Workshop. 2022. Whatcom Community College. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2021</span></div><div class='flex-grow-1'>CAE/NSA . Mentorship and Peer Review Workshop. 2021. Whatcom Community College. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2020</span></div><div class='flex-grow-1'>CAE/NSA Course. Network Security &amp; Intrusion Detection. 2020. Dakota State University. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2019</span></div><div class='flex-grow-1'>CAE/NSA Workshop. Software Exploitation. 2019. Dakota State University. Las Vegas, Nevada.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2019</span></div><div class='flex-grow-1'>CAE/NSA Workshop. SCADA. 2019. Dakota State University. Minneapolis, Minnesota.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2019</span></div><div class='flex-grow-1'>CAE/NSA Course. Offensive Security. 2019. Dakota State University. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2018</span></div><div class='flex-grow-1'>CAE/NSA Workshop. Malware Analysis. 2018. Dakota State University. Sioux Falls, South Dakota.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2018</span></div><div class='flex-grow-1'>CAE/NSA Course. Web Security. 2018. Dakota State University. Online.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2017</span></div><div class='flex-grow-1'>CAE/NSA Workshop. Secure Software Development. 2017. University of West Florida. Pensacola, Florida.</div></li><li class='list-group-item d-flex align-items-start'><div class='me-3'><span class='badge bg-primary-subtle text-primary-emphasis'>2017</span></div><div class='flex-grow-1'>CAE/NSA Workshop. CAE Application, Peer Review/Mentoring and KU Mapping. 2017. University of West Florida. Pensacola, Florida.</div></li></ul></div></section>
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark bg-opacity-25 border-0 text-light shadow-lg">
+                <div class="card-body">
+                  <h2 class="h4 mb-3">Alan Stines, Ph.D.</h2>
+                  <ul class="list-unstyled small mb-0">
+                    <li class="mb-2"><span class="opacity-75">Role:</span> Assistant Professor</li>
+                    <li class="mb-2"><span class="opacity-75">Institution:</span> Middle Georgia State University</li>
+                    <li class="mb-2"><span class="opacity-75">Email:</span> <a class="link-light" href="https://www.mga.edu/directory/people.php?name=stines-alan">MGA Directory</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="py-4 bg-body-secondary border-top">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="mb-1">&copy; 2025 Curriculum Vitae</p>
-        <p class="text-muted small mb-0">Polished from the uploaded Word CV with Bootstrap components and #633393 theme.</p>
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-7">
+              <h2 class="section-title">About</h2>
+              <p class="mb-3">Educator and researcher with expertise spanning cybersecurity, malware analysis, reverse engineering, software exploitation, software engineering, and data analytics. Passionate about student success, curriculum quality, and community engagement through cybersecurity education.</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="stat-tile">
+                    <div class="h3 mb-0">2014+</div>
+                    <div class="text-muted small">Teaching since</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="stat-tile">
+                    <div class="h3 mb-0">Ph.D.</div>
+                    <div class="text-muted small">Cyber Operations</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="stat-tile">
+                    <div class="h3 mb-0">15+ yrs</div>
+                    <div class="text-muted small">Higher Ed & IT</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="stat-tile">
+                    <div class="h3 mb-0">MGA</div>
+                    <div class="text-muted small">Assistant Professor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching" class="py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <h2 class="section-title">Teaching Philosophy</h2>
+              <p class="lead"><strong>My teaching philosophy</strong> is built on the belief that education should be <u>accessible, practical, and empowering</u>. In the fast-paced world of cybersecurity and information technology, I aim to create learning experiences that go beyond theory—cultivating <u>critical thinking, creativity, and confidence</u> in every student.</p>
+              <p><strong>Hands-on learning</strong> is the <u>cornerstone</u> of my approach. I design courses around real-world tools, labs, simulations, and applied projects that mirror the challenges professionals face in the field. Whether students are competing in cybersecurity events, contributing to open-source projects, or engaging in scenario-based exercises, my goal is to equip them with <strong>practical, job-ready skills</strong> that are <u>relevant and transferable</u>.</p>
+              <p><strong>Flexibility and inclusion</strong> matter. Through <u>open-ended assignments</u> and <u>multiple pathways to success</u>, students can explore different problem-solving methods and engage with material in ways that align with their strengths and interests. This approach fosters <strong>innovation</strong> and ensures that every learner feels <u>represented and supported</u>.</p>
+              <p><strong>Open Educational Resources (OER)</strong> are a guiding principle. By adopting and creating <u>low-cost or no-cost</u> learning materials, I work to eliminate financial barriers and make education more equitable. This commitment was central to my doctoral research, which examined faculty perceptions of OER in cybersecurity programs.</p>
+              <p>I teach with <strong>purpose and responsibility</strong>. The growing shortage of cybersecurity professionals represents a challenge that extends far beyond the classroom—it affects our national security, economy, and digital future. I see it as both my professional mission and personal calling to help close that gap by preparing the <u>next generation of cyber defenders</u> through thoughtful, engaging, and inclusive education.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="badge badge-accent-a me-2">Hands-on</span>
+                    <span class="badge badge-accent-b">Inclusive</span>
+                  </div>
+                  <ul class="small mb-0 list-unstyled">
+                    <li class="mb-2">Real-world labs, simulations, and applied projects</li>
+                    <li class="mb-2">Open-ended assignments encouraging multiple solutions</li>
+                    <li class="mb-2">Strong commitment to OER and affordability</li>
+                    <li>Focus on critical thinking, creativity, and confidence</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card shadow-sm border-0 mt-3">
+                <div class="card-body">
+                  <h3 class="h6 text-uppercase text-muted mb-3">Keywords</h3>
+                  <div class="word-cloud">
+                    <span class="word s-5 c-primary">Cybersecurity</span>
+                    <span class="word s-4 c-a">Hands-on</span>
+                    <span class="word s-3 c-b">OER</span>
+                    <span class="word s-2 c-primary">Accessibility</span>
+                    <span class="word s-3 c-a">Inclusion</span>
+                    <span class="word s-2 c-b">Simulations</span>
+                    <span class="word s-4 c-primary">Critical Thinking</span>
+                    <span class="word s-3 c-a">Creativity</span>
+                    <span class="word s-2 c-b">Confidence</span>
+                    <span class="word s-2 c-primary">Open-source</span>
+                    <span class="word s-3 c-a">Competitions</span>
+                    <span class="word s-2 c-b">Scenario-based</span>
+                    <span class="word s-3 c-primary">Ethical Hacking</span>
+                    <span class="word s-2 c-a">Web Development</span>
+                    <span class="word s-2 c-b">Databases</span>
+                    <span class="word s-2 c-primary">Network Security</span>
+                    <span class="word s-2 c-a">Malware Analysis</span>
+                    <span class="word s-2 c-b">Reverse Engineering</span>
+                    <span class="word s-3 c-primary">Workforce Readiness</span>
+                    <span class="word s-2 c-a">Mentorship</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="py-5 bg-body-tertiary">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 card-title mb-1">Doctor of Philosophy – Cyber Operations</h3>
+                  <div class="text-muted small mb-2">Dakota State University • 2020</div>
+                  <ul class="mb-0 small list-unstyled">
+                    <li>Beacom College of Computer and Cyber Sciences</li>
+                    <li>Emphasis: cybersecurity, malware analysis, reverse engineering, software exploitation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 card-title mb-1">Master of Science – Applied Computer Science</h3>
+                  <div class="text-muted small mb-2">Columbus State University • 2013</div>
+                  <ul class="mb-0 small list-unstyled">
+                    <li>TSYS Department of Computer Science</li>
+                    <li>Emphasis: software engineering, data modeling/analysis, architecture, testing, enterprise environments</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 card-title mb-1">Bachelor of Science – Information Technology</h3>
+                  <div class="text-muted small mb-2">Middle Georgia State University • 2007</div>
+                  <ul class="mb-0 small list-unstyled">
+                    <li>School of Information Technology</li>
+                    <li>Emphasis: software development, web technologies, database development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="py-5">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 mb-1">Academic Experience</h3>
+                  <ul class="timeline small mb-0">
+                    <li>
+                      <div class="timeline-title">Assistant Professor (FT)</div>
+                      <div class="text-muted">Middle Georgia State University — Macon, GA • 2020+</div>
+                    </li>
+                    <li>
+                      <div class="timeline-title">Lecturer (FT)</div>
+                      <div class="text-muted">Middle Georgia State University — Macon, GA • 2015–2020</div>
+                    </li>
+                    <li>
+                      <div class="timeline-title">Adjunct Professor (PT)</div>
+                      <div class="text-muted">Middle Georgia State University — Macon, GA • 2014–2015</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5 mb-1">Professional Experience</h3>
+                  <ul class="timeline small mb-0">
+                    <li>
+                      <div class="timeline-title">Application Administrator/Programmer</div>
+                      <div class="text-muted">Middle Georgia State University — Macon, GA • 2008–2015</div>
+                    </li>
+                    <li>
+                      <div class="timeline-title">Mainframe Programmer</div>
+                      <div class="text-muted">Bibb County Govt. — Macon, GA • 2007–2008</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="py-5 bg-body-tertiary">
+        <div class="container">
+          <h2 class="section-title">Service Activities</h2>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <ul class="list-group shadow-sm">
+                <li class="list-group-item">Director, Center for Cybersecurity Education and Applied Research (CCEAR)</li>
+                <li class="list-group-item">Point of Contact, NSA/DHS CAE-CD Certifications</li>
+                <li class="list-group-item">Point of Contact, DoD Cyber Crime Center (DC3) partnership</li>
+                <li class="list-group-item">MGA Department of IT Senate Representative (2021+)</li>
+                <li class="list-group-item">STEMposium Organizer (2021+)</li>
+                <li class="list-group-item">Department of IT Curriculum Committee Chair (2024+)</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group shadow-sm">
+                <li class="list-group-item">Institutional, departmental, and ad-hoc committee participation</li>
+                <li class="list-group-item">Website editor – MGA School of Computing</li>
+                <li class="list-group-item">Student organization advisor: CyberKnights & CGISSA</li>
+                <li class="list-group-item">Bibb County and Bleckley County Public Schools Advisor & Volunteer</li>
+                <li class="list-group-item">Participation in internal and external STEM events</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="py-5">
+        <div class="container">
+          <h2 class="section-title">Publications & Presentations</h2>
+          <div class="accordion" id="pubsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2024a">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024a" aria-expanded="true" aria-controls="collapse2024a">
+                  2024–2025 Highlights
+                </button>
+              </h2>
+              <div id="collapse2024a" class="accordion-collapse collapse show" aria-labelledby="heading2024a" data-bs-parent="#pubsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>Stines, A. (2025, April). MGA Beyond the Classroom: Demystifying the Dark Web. Macon & Cochran, GA.</li>
+                    <li>Stines, A. (2024, October). Faculty perceptions of OER in cyber curriculums. IACIS. <a href="https://iacis.org/conference/program24/s66.html" target="_blank" rel="noopener">Program link</a></li>
+                    <li>Feroz, K., &amp; Stines, A. (2024, October). AI, Big Data, IoT in sustainable innovation. IACIS. <a href="https://iacis.org/conference/program24/s64.html" target="_blank" rel="noopener">Program link</a></li>
+                    <li>Feroz, K. &amp; Stines A. (2024). Big Data &amp; IoT in Sustainable Innovation. IACIS, 25(1), 376–390. <a href="https://doi.org/10.48009/1_iis_2024_131" target="_blank" rel="noopener">DOI</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingMedia">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedia" aria-expanded="false" aria-controls="collapseMedia">
+                  Media & Interviews
+                </button>
+              </h2>
+              <div id="collapseMedia" class="accordion-collapse collapse" aria-labelledby="headingMedia" data-bs-parent="#pubsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>Bowcut, S. (2023, May 14). Interview with Dr. Alan Stines. Cybersecurity Guide. <a href="https://cybersecurityguide.org/expert-interviews/alan-stines/" target="_blank" rel="noopener">Link</a></li>
+                    <li>Stines, A., Cleveland, A. (2022, October). Future Workforce Friday Podcast: Episode 2. Greater Macon Works. <a href="https://app.greatercareerworks.org/public/video/1963" target="_blank" rel="noopener">Link</a></li>
+                    <li>13WMAZ (2023, Mar 6). Houston Healthcare falls victim to cybersecurity attack — expert guidance. <a href="https://www.13wmaz.com/article/news/local/houston-healthcare-falls-victim-to-cybersecurity-attack/93-c9eafdfe-996e-44c5-a94e-7c4799869d68" target="_blank" rel="noopener">Article</a></li>
+                    <li>13WMAZ (2024, May 20). Amid possible Bibb cyberattack, MGA cybersecurity expert explains response. <a href="https://www.13wmaz.com/video/news/local/macon/93-16103e9d-f926-4e6e-95e0-356dcad3886b" target="_blank" rel="noopener">Video</a></li>
+                    <li>13WMAZ (2022, Dec 16). Georgia lawmakers push for state TikTok ban — expert perspectives. <a href="https://www.13wmaz.com/article/tech/anything-on-your-phone-they-track-it-georgia-lawmakers-push-for-state-tiktok-ban-2/93-49104828-e27c-4395-a306-cf3c90abd240" target="_blank" rel="noopener">Article</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEarlier">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEarlier" aria-expanded="false" aria-controls="collapseEarlier">
+                  Earlier Scholarly Work
+                </button>
+              </h2>
+              <div id="collapseEarlier" class="accordion-collapse collapse" aria-labelledby="headingEarlier" data-bs-parent="#pubsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>Stines, A., &amp; Kettani, H. (2019). Exploring Open Educational Resources in Cyber Training. IJCH, 5(3), 10–13. <a href="https://doi.org/10.18178/ijch.2019.5.3.139" target="_blank" rel="noopener">DOI</a></li>
+                    <li>Floyd, K. S., Rigole, N., &amp; Stines, A. (2017). Student Perceptions of Video Conferencing Technology. Issues in Information Systems, 18(3).</li>
+                    <li>Floyd, K., Kwak, M., &amp; Stines, A. (2016). MGA Web Development Tutorials. OER for ALG Grant. <a href="https://oer.galileo.usg.edu/compsci-ancillary/4" target="_blank" rel="noopener">Link</a></li>
+                    <li>Floyd, K., Stines, A., St. Clair, N. (2016). Developing a University Cybersecurity Center... 3rd Community College Cyber Summit.</li>
+                    <li>Floyd, K. S., Rigole, N., &amp; Stines, A. (2016). Faculty Perceptions of Video Conferencing Technology. Proceedings of the 56th IACIS, Nashville, TN.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" class="py-5 bg-body-tertiary">
+        <div class="container">
+          <h2 class="section-title">Honors & Awards</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col">
+              <div class="card h-100 shadow-sm border-primary-subtle">
+                <div class="card-body">
+                  <span class="badge badge-accent-b mb-2">Teaching</span>
+                  <div class="fw-semibold">Dean’s Award for Faculty Excellence in Teaching</div>
+                  <div class="text-muted small">2017, 2018, 2022, 2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm border-primary-subtle">
+                <div class="card-body">
+                  <span class="badge badge-accent-a mb-2">Recognition</span>
+                  <div class="fw-semibold">eMajor Faculty Hero Award</div>
+                  <div class="text-muted small">2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm border-primary-subtle">
+                <div class="card-body">
+                  <span class="badge badge-accent-a mb-2">Service</span>
+                  <div class="fw-semibold">MGA Fifteen Years’ Service Award</div>
+                  <div class="text-muted small">2023</div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm border-primary-subtle">
+                <div class="card-body">
+                  <span class="badge badge-accent-b mb-2">Spotlight</span>
+                  <div class="fw-semibold">DSU Marketing Campaign for Doctoral Student Publishing</div>
+                  <div class="text-muted small">2019</div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm border-primary-subtle">
+                <div class="card-body">
+                  <span class="badge badge-accent-b mb-2">Spotlight</span>
+                  <div class="fw-semibold">MGA Finding Greatness Marketing Campaign</div>
+                  <div class="text-muted small">2017</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="professional-development" class="py-5">
+        <div class="container">
+          <h2 class="section-title">Professional Development</h2>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 text-uppercase text-muted">Workshops & Training</h3>
+                  <ul class="small mb-0">
+                    <li>NCyTE — ISASCA CISM Workshop (2025)</li>
+                    <li>CAE in Cybersecurity Annual Symposium (2025, 2023)</li>
+                    <li>CAE/NSA Mentorship & Peer Review Workshops (2021–2025)</li>
+                    <li>NICE Conference & Expo (2024, 2023)</li>
+                    <li>WW Hackin' Fest (2024)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 text-uppercase text-muted">CAE/NSA Courses & Workshops</h3>
+                  <ul class="small mb-0">
+                    <li>Network Security & Intrusion Detection (2020)</li>
+                    <li>Software Exploitation (2019), SCADA (2019), Offensive Security (2019)</li>
+                    <li>Malware Analysis (2018), Web Security (2018)</li>
+                    <li>Secure Software Development (2017)</li>
+                    <li>CAE Application, Peer Review/Mentoring and KU Mapping (2017)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <div class="small text-muted">© <span id="year"></span> Alan Stines. All rights reserved.</div>
+        <div class="small">
+          <a class="link-secondary me-3" href="#home">Back to top</a>
+          
+        </div>
       </div>
     </footer>
 
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="helloToast" class="toast align-items-center text-bg-primary border-0" role="alert">
-        <div class="d-flex">
-          <div class="toast-body">Site styled with #633393. Navigate via sidebar or navbar.</div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
+  
 </html>
+
+
