@@ -22,6 +22,43 @@ body {
 	background : linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-700) 60%, var(--brand-primary-800) 100%);
 }
 
+.hero-image {
+	position: relative;
+	overflow: hidden;
+	background:
+		linear-gradient(90deg, rgba(20, 12, 36, .92) 0%, rgba(47, 22, 78, .82) 48%, rgba(16, 9, 32, .7) 100%),
+		url("../images/it4344-banner.png") center / cover no-repeat;
+}
+
+.hero-image .container {
+	position: relative;
+	z-index: 1;
+}
+
+.profile-card {
+	overflow: hidden;
+	backdrop-filter: blur(6px);
+}
+
+.profile-photo {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	object-position: center 18%;
+}
+
+.section-banner {
+	display: block;
+	width: 100%;
+	min-height: 180px;
+	max-height: 320px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: .5rem;
+	box-shadow: 0 1rem 2.5rem rgba(36, 18, 58, .18);
+}
+
 .section-title {
 	font-weight: 700;
 	margin-bottom: 1rem;
@@ -138,6 +175,16 @@ body {
 
 @media (min-width: 992px) {
 	.display-5 { letter-spacing: .2px; }
+}
+
+@media (max-width: 575.98px) {
+	.profile-photo {
+		aspect-ratio: 1 / 1;
+	}
+
+	.section-banner {
+		min-height: 140px;
+	}
 }
 
 .word-cloud {
